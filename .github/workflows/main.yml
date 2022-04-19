@@ -1,0 +1,297 @@
+# ------------------------------------ #
+#       Made By An V.1.0.0           #
+# ------------------------------------ #
+name: My Windows software
+# ------------------------------------ #
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+# ------------------------------------ #
+jobs:
+  metso:
+    runs-on: ubuntu-20.04
+    continue-on-error: True
+    strategy:
+      matrix:
+        testi: [1.1, 27, 278, 2v, 9e, 93h, os, yys,]
+        fzaga: [Aqw, his, ]
+    steps:
+    - name: Setup
+      uses: actions/checkout@v1
+    - name: runneyr_go
+      run: |
+        sudo apt update -y && sleep 5
+        
+  roart-linux:
+    needs: [metso]
+    runs-on: windows-latest
+    continue-on-error: True
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9, 3.7]
+        check: [tesx, opamw3, ppaj2, 883c, ga6f, iis9, hjs88, 929c, hha6, 939s]
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: EBroo maov .
+      run: |
+        cd gkz
+        ls
+        pip install selenium
+        pip install names
+        python hin.py
+        
+        
+  roart-linux-01:
+    needs: [roart-linux]
+    runs-on: windows-latest
+    continue-on-error: True
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9, 3.7]
+        eck: [aw, ioa, 7s, 039,jhhs, 738j, ui8s, 0wj3, us8,cs]
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: EBroo maov .
+      run: |
+        cd gkz
+        ls
+        pip install selenium
+        pip install names
+        python hin.py && sleep 1002     
+        
+  roart-linux-02:
+    needs: [roart-linux-01]
+    runs-on: windows-latest
+    continue-on-error: True
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9, 3.7]
+        wyck: [0sw, 1noa, 7cs, 039, vjhhs, 7sk38j, a8s, 00awj3, u2ns8, cbs]
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: EBroo maov 
+      run: |
+        cd gkz
+        ls
+        pip install selenium
+        pip install names
+        python hin.py && sleep 1002
+          
+        
+  roart-linux-03:
+    needs: [roart-linux-02]
+    runs-on: windows-latest
+    continue-on-error: True
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9, 3.7]
+        cxheck: [tesx, opamw3, ppaj2, 883c, ga6f, iis9, hjs88, 929c, hha6, 939s]
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: EBroo maov .
+      run: |
+        cd gkz
+        ls
+        pip install selenium
+        pip install names
+        python hin.py
+        
+        
+  roart-linux-04:
+    needs: [roart-linux-03]
+    runs-on: windows-latest
+    continue-on-error: True
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9, 3.7]
+        eomsck: [aw, ioa, 7s, 039,jhhs, 738j, ui8s, 0wj3, us8,cs]
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: EBroo maov .
+      run: |
+        cd gkz
+        ls
+        pip install selenium
+        pip install names
+        python hin.py && sleep 1002     
+        
+  roart-linux-05:
+    needs: [roart-linux-04]
+    runs-on: windows-latest
+    continue-on-error: True
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9, 3.7]
+        Mtissh: [0sw, 1noa, 7cs, 039, vjhhs, 7sk38j, a8s, 00awj3, u2ns8, cbs]
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: EBroo maov 
+      run: |
+        cd gkz
+        ls
+        pip install selenium
+        pip install names
+        python hin.py && sleep 1002         
+        
+  roart-linux-06:
+    needs: [roart-linux-05]
+    runs-on: windows-latest
+    continue-on-error: True
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9, 3.7]
+        ecbk: [awv, iowa, 7ws, 0w39,jhhws, 7w38j, uiw8s, 0wjw3, usw8,ces]
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: EBroo maov .
+      run: |
+        cd gkz
+        ls
+        pip install selenium
+        pip install names
+        python hin.py && sleep 1002     
+        
+  roart-linux-07:
+    needs: [roart-linux-06]
+    runs-on: windows-latest
+    continue-on-error: True
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9, 3.7]
+        bwyck: [0sw, 1noa, 7cs, 039, vjhhs, 7sk38j, a8s, 00awj3, u2ns8, cbs]
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: EBroo maov 
+      run: |
+        cd gkz
+        ls
+        pip install selenium
+        pip install names
+        python hin.py && sleep 1002
+          
+        
+  roart-linux-08:
+    needs: [roart-linux-07]
+    runs-on: windows-latest
+    continue-on-error: True
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9, 3.7]
+        cxhxck: [tedsx, oapwmw3, w1j2, 883bc, gar6f, iisb9, hjss88, 929vc, hhab6, 939ss]
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: EBroo maov .
+      run: |
+        cd gkz
+        ls
+        pip install selenium
+        pip install names
+        python hin.py
+        
+        
+  roart-linux-09:
+    needs: [roart-linux-08]
+    runs-on: windows-latest
+    continue-on-error: True
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9, 3.7]
+        eccxk: [awv, ioqa, 7sa, 0a39,jhshs, 73v8j, uiq8s, 0wwj3, ubs8, 9cs]
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: EBroo maov .
+      run: |
+        cd gkz
+        ls
+        pip install selenium
+        pip install names
+        python hin.py && sleep 1002     
+        
+  roart-linux-10:
+    needs: [roart-linux-09]
+    runs-on: windows-latest
+    continue-on-error: True
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9, 3.7]
+        ossh: [02hw, 1nvoa, 7vcs, 0s39, vhs, v38j, av8s, 3awj3, ub2ns8, cvbs]
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: EBroo maov 
+      run: |
+        cd gkz
+        ls
+        pip install selenium
+        pip install names
+        python hin.py && sleep 1002                 
+        
+        
